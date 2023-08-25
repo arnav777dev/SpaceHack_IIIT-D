@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .image-container {
+            width: 25%;
+            padding-right: 20px;
+        }
+        
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .card-container {
+            width: 50%;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <h2>Firm Logos</h2>
+        <div class="images">
+            <img class="image" src="firm1.png" alt="Firm 1">
+            <img class="image" src="firm2.png" alt="Firm 2">
+            <!-- Add more firm logos here -->
+        </div>
+    </div>
+    
+    <div class="card-container">
+        <h2>Images and Descriptions</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="image1.jpg" alt="Image 1">
+                <p>Description for Image 1</p>
+            </div>
+            <div class="card">
+                <img src="image2.jpg" alt="Image 2">
+                <p>Description for Image 2</p>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+    </div>
+</body>
+</html>
